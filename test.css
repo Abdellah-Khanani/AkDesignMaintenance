@@ -1,0 +1,11 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.gif-container {
+  background: url("folder/Test.gif") center;
+  background-size: cover;
+
+  height: 100%;
+}
