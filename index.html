@@ -4,35 +4,103 @@
 	<title>AK DESIGN</title>
 	<link rel="icon" type="image/x-icon" href="folder/image/favicon.ico">
 	<style>
-		#img1 {
+		/* HOPE */
+		.img1 {
 			position: absolute;
 			top: 670px;
 			left: 190px;
-
 		}
-		#img2 {
+		.img1reveal{
+			position: absolute;
+			top: 670px;
+			left: 190px;
+			
+			opacity: 0%;
+			
+		}
+		.img1reveal:hover{
+			opacity: 100%;
+			animation: reveal 1.5s forwards;
+		}
+
+		/* BEHANCE */
+		.img2 {
 			position: absolute;
 			top: 790px;
 			left: 1410px;
-
 		}
-		#img3 {
+		.img2reveal{
+			position: absolute;
+			top: 790px;
+			left: 1410px;
+			
+			opacity: 0%;	
+		}
+		.img2reveal:hover{
+			opacity: 100%;
+			animation: reveal 1.5s forwards;
+		}
+
+		/* INSTAGRAM */
+		.img3 {
 			position: absolute;
 			top: 670px;
 			left: 1410px;
 		}
-        #img4 {
+		.img3reveal{
+			position: absolute;
+			top: 670px;
+			left: 1410px;
+			
+			opacity: 0%;	
+		}
+		.img3reveal:hover{
+			opacity: 100%;
+			animation: reveal 1.5s forwards;
+		}
+		
+		/* YOUTUBE */
+		.img4 {
 			position: absolute;
 			top: 730px;
 			left: 1410px;
 		}
+		.img4reveal{
+			position: absolute;
+			top: 730px;
+			left: 1410px;
+			
+			opacity: 0%;	
+		}
+		.img4reveal:hover{
+			opacity: 100%;
+			animation: reveal 1.5s forwards;
+		}
+		
+		@keyframes reveal {
+			from {
+				clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+			}
+			to {
+				clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+			}
+		}
+		
 	</style>
 </head>
 <body>
-	<a href="https://youtu.be/ClJN8VFfktw"><img id="img1" src="folder/image/Hope.png" alt="Descrizione dell'immagine 1"></a>
-	<a href="https://www.behance.net/abdek"><img id="img2" src="folder/image/behance.png" alt="Descrizione dell'immagine 2"></a>
-	<a href="https://www.instagram.com/abdellah_khanani/"><img id="img3" src="folder/image/instagram.png" alt="Descrizione dell'immagine 3"></a>
-    <a href="https://www.youtube.com/@AbdellahK"><img id="img4" src="folder/image/youtube.png" alt="Descrizione dell'immagine 3"></a>
+	
+	<a href="https://youtu.be/ClJN8VFfktw"><img class="img1" src="folder/image/Hope.png"> </a>
+	<a href="https://youtu.be/ClJN8VFfktw"><img class="img1reveal" src="folder/image/Hope2.png">
+
+	<a href="https://www.behance.net/abdek"><img class="img2" src="folder/image/behance.png"></a>
+	<a href="https://www.behance.net/abdek"><img class="img2reveal" src="folder/image/behance2.png"></a>
+
+	<a href="https://www.instagram.com/abdellah_khanani/"><img class="img3" src="folder/image/instagram.png"></a>
+	<a href="https://www.instagram.com/abdellah_khanani/"><img class="img3reveal" src="folder/image/instagram2.png"></a>
+
+    <a href="https://www.youtube.com/@AbdellahK"><img class="img4" src="folder/image/youtube.png"></a>
+	<a href="https://www.youtube.com/@AbdellahK"><img class="img4reveal" src="folder/image/youtube2.png"></a>
 </body>
 </html>
 
@@ -43,6 +111,9 @@
         background-image: url('folder/Test.gif');
         overflow: hidden;
         position: fixed;
+		background-repeat: 1;
+  		background-attachment: fixed; 
+ 	
     }
 
 </style>
